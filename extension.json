@@ -1,0 +1,20 @@
+{
+    "name": "DailyQuote",
+    "version": "1.1 2018-11-16",
+    "author": "[https://www.mediawiki.org/wiki/User:24pm Pavel Malahov]",
+    "url": "https://www.mediawiki.org/wiki/Extension:DailyQuote",
+    "descriptionmsg": "dailyquote_desc",
+    "license-name": "GPL-2.0-or-later",
+    "type": "other",
+    "requires": {
+        "MediaWiki": ">= 1.29.0"
+    },
+    "MessagesDirs": { "DailyQuote": ["i18n"] },
+    "AutoloadClasses": {
+        "DailyQuote": "DailyQuote_body.php"
+    },
+    "Hooks": {
+        "ParserFirstCallInit": "DailyQuote::setup"
+    },
+    "manifest_version": 2
+}
